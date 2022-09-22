@@ -1,0 +1,98 @@
+<br>
+<br>
+<br >
+<div class="container" >
+  <!-- <app-product></app-product> -->
+  <!-- <div  *ngIf = addedProduct class="alert alert-secondary" role="alert" >
+   <strong >  {{addedProduct}} </strong> is selected
+
+  </div> -->
+  
+  <div class="row">
+    
+    <div class="col-xs-12">
+      <div class="col-md-3">
+          
+            <div class="card" style="width: 26rem;">
+              <div class="card-body">
+                    <img class="card-img-top" src="../../assets/macbook-air-space-gray-select-201810.jfif" alt="Card image cap">
+                  <h3 class="card-title text-center">laptop</h3>
+                  <p class="card-text"></p>
+                  <div class="text-center">
+                      
+                    <a *ngIf =!name routerLink="/product" class="btn btn-primary" (click)="productedOncart('laptop')">select</a>
+                  
+                </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+           
+            <div class="card" style="width: 26rem;">
+                <div class="card-body">
+                    <img class="card-img-top" src="../../assets/Apple-iPhone-13-Mini-Smartphones-491997723-i-2-1200Wx1200H.jfif" alt="Card image cap">
+                  <h3 class="card-title text-center">phone</h3>
+                  <p class="card-text"></p>
+                  <div class="text-center">
+                      
+                    <a *ngIf =!name routerLink="/product" class="btn btn-primary" (click)="productedOncart('phone')" >Select</a>
+                    
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+        <div class="col-md-3">
+            
+            <div class="card" style="width: 26rem;">
+              <div class="card-body">
+                <img class="card-img-top" src="../../assets/Gear-PS5-2-src-Sony-teal.webp">
+                  <h3 class="card-title text-center">console</h3>
+                  <p class="card-text text-center"></p>
+                  <div class="text-center">
+                      
+                    <a *ngIf = !name routerLink="/product" class="btn btn-primary" (click)="productedOncart('console')">select</a>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+          
+            <div class="card" style="width: 26rem;">
+                <div class="card-body">
+                    <img class="card-img-top" src="../../assets/2021-05-06-image.webp" alt="Card image cap">
+                  <h3 class="card-title text-center">pre-built</h3>
+                  <p class="card-text"></p>
+                  <div class="text-center">
+                      
+                      <a *ngIf =!name routerLink="/product"  class="btn btn-primary" (click)="productedOncart('preBuilt')">select</a>
+                      
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+</div>
+<br>
+<br>
+<div class="container">
+  
+  <div class="container">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 bg-success text-center py-4 text-white">
+          <h2 *ngIf =!productSelected>Select Product</h2>
+          <h2 *ngIf = productSelected> Product Selected</h2>
+         <a *ngIf = productSelected  class="btn btn-primary "  
+          (click) = 'checkout() '> check Out</a> 
+          <br>
+          <br>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    
+    
+    
+  </div>

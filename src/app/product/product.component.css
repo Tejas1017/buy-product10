@@ -1,0 +1,11 @@
+img {
+    height: 200px;
+    width: 250px;
+    size: absolute;
+}
+.card {
+    border: 1px solid #ddd;
+}
+button{
+    padding-bottom: 3px;
+}

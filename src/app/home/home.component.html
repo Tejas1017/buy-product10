@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<div class="content">
+  <div class="content__container">
+    <!-- <p class="content__container__text">
+      Hello
+    </p> -->
+    <div class="row">
+      <div class="col-md-4">
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="">
+         
+            <form >
+
+              
+              <input type="text" class="form-control text-center" placeholder="Welcome" #name [(ngModel)]="username" name = "ngForm">
+              
+              <span>
+                <a routerLink="../product" class="btn btn-success " type="button" (click)="inputName(name)">To Store</a>
+
+              </span>
+              
+            </form>
+          
+        </div>
+
+        <form action="" id="form" #myForm="ngForm">
+        <p>
+
+         <label for="">Username:</label> 
+         <input type="text"class='form-control text-center' placeholder="login"
+         #name1 >
+        </p>
+        <p>
+          <label for="">Password:</label>
+
+        <input type="password"class='form-control text-center' placeholder="password" #pass>
+        </p>
+      
+        <button class="btn btn-success bttn"  id="btn" (click)="Onlogin(myForm)">login</button>
+        <button class="btn btn-danger bttn"  (click)  ="Onlogout()">logout</button>
+      </form>
+
+
+      </div>
+
+
+      <div class="col-md-4 text-center">
+        <p *ngIf=display>{{username}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.
+<ul class="list-group-item container">
+    <li class="list-group-item active ">
+        This your cart :-
+    </li>
+    <li *ngFor = "let cart1 of abc; let i = index " class="list-group-item" >
+
+        
+        {{i+1}}.  {{ abc[i]}} <a (click) ="remove(i)" >remove</a>
+        
+    </li>
+
+   
+</ul>
