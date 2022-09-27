@@ -1,6 +1,7 @@
 import { Component, OnInit, } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DesignutilityService } from '../appServices/designutility.service';
+import { Auth } from '../auth.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class ProductComponent implements OnInit {
 
   constructor(private _cart:DesignutilityService,
     private router:Router,
-    private route:ActivatedRoute) {
+    private route:ActivatedRoute, private authService: Auth) {
     this.abc = this._cart.cart;
    }
   
@@ -46,6 +47,8 @@ export class ProductComponent implements OnInit {
   checkout(){
 
    this.router.navigate(['cart'])
+   this.authService.login()
+
   }
  
 }

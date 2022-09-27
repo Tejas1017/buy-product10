@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AuthGuard } from './auth-guard.service';
 import { Auth } from './auth.service';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -16,6 +17,7 @@ import { Auth } from './auth.service';
   declarations: [
      AppComponent,
      HeaderComponent,
+     ErrorComponent,
   ],
   imports: [
     BrowserModule,

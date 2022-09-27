@@ -11,13 +11,26 @@ a {
     display: flex;
     flex-direction: column;
 }
-#btn{
-    /* display: flex;
-    flex-direction: column; */
-    margin-left: 170px;
+button{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 130px;
+    align-items: center;
+    
+    
    
     
 }
-.bttn{
-    margin-right: 5px;
+
+.bttn1{
+    margin-top: 5px;
+}
+a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 130px;
+    align-content: center;
+    
 }

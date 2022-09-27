@@ -2,9 +2,7 @@
 
 <div class="content">
   <div class="content__container">
-    <!-- <p class="content__container__text">
-      Hello
-    </p> -->
+  
     <div class="row">
       <div class="col-md-4">
 
@@ -17,13 +15,13 @@
             <form >
 
               
-              <input type="text" class="form-control text-center" placeholder="Welcome" #name [(ngModel)]="username" name = "ngForm">
-              
+              <!-- <input type="text" class="form-control text-center" placeholder="Welcome" #name [(ngModel)]="username" name = "ngForm"> -->
+<!--               
               <span>
                 <a routerLink="../product" class="btn btn-success " type="button" (click)="inputName(name)">To Store</a>
 
               </span>
-              
+               -->
             </form>
           
         </div>
@@ -40,12 +38,9 @@
 
         <input type="password"class='form-control text-center' placeholder="password" #pass>
         </p>
-      
-        <button class="btn btn-success bttn"  id="btn" (click)="Onlogin(myForm)">login</button>
-        <button class="btn btn-danger bttn"  (click)  ="Onlogout()">logout</button>
       </form>
-
-
+        <a routerLink ='../product' class="btn btn-success bttn"  (click)="Onlogin(myForm)">login</a>
+        <button class="btn btn-danger bttn1 "  (click) ="Onlogout()">logout</button>
       </div>
 
 
