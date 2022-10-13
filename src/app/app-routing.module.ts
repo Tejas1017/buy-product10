@@ -13,8 +13,8 @@ const routes: Routes = [
 
  {path : '',component: HomeComponent},
  {path:'', component:Headers},
- {path: 'Not-found',component:ErrorComponent, data: {message:'page not found!!'}},
- {path: '**',redirectTo:'/Not-found'},
+//  {path: 'Not-found',component:ErrorComponent, data: {message:'page not found!!'}},
+//  {path: '**',redirectTo:'/Not-found'},
   
   {path: 'cart',
   loadChildren:()=>

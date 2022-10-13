@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DesignutilityService } from '../appServices/designutility.service';
-import { Cart } from '../appServices/message.service';
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',

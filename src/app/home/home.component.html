@@ -16,8 +16,8 @@
 
               
               <!-- <input type="text" class="form-control text-center" placeholder="Welcome" #name [(ngModel)]="username" name = "ngForm"> -->
-<!--               
-              <span>
+              
+              <!-- <span>
                 <a routerLink="../product" class="btn btn-success " type="button" (click)="inputName(name)">To Store</a>
 
               </span>
@@ -31,7 +31,11 @@
 
          <label for="">Username:</label> 
          <input type="text"class='form-control text-center' placeholder="login"
-         #name1 >
+         #name1
+         required
+         email 
+       >
+         <!-- <span class="help-block" *ngIf="email.invalid && email.touched">Please enter valid value!!</span> -->
         </p>
         <p>
           <label for="">Password:</label>
